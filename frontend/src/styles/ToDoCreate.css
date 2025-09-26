@@ -1,0 +1,139 @@
+.To-Do-Create-Wrapper {
+    background-color: white;
+    height: 100vh;
+
+    display: flex;              /* make it flex */
+    flex-direction: column;     /* stack children vertically */
+    align-items: center;        /* center horizontally */
+    justify-content: center;    /* center vertically */
+    text-align: center;
+    position:relative;
+}
+
+.Back-To-Home-Container {
+    position: absolute; /* take it out of normal flow */
+    top: 20px;          /* distance from top */
+    left: 50px;         /* distance from left */
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+.Back-To-Home-Container p {
+    color: #333333;
+    font-size: 20px;
+    margin-left: 12px;
+    font-weight: 600;
+}
+a {
+    text-decoration: none;
+}
+
+.To-Do-Form-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical centering */
+    align-items: center;     /* horizontal centering */
+    background-color: #FDF7F5;
+    border-radius: 14px;
+    border-style: solid;
+    border-color: #D1B7B3;
+    border-width: 2px;
+    width: 90%;
+    max-width: 417px;
+}
+
+
+
+.To-Do-Titile-Container {
+    display: flex;
+    justify-content: start;
+    background-color: transparent;
+    width: 361px;
+}
+.To-Do-Titile-Container p {
+    font-weight: 18px;
+    color: #BA9083;
+    font-weight: 550;
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+
+.Form-Title-Container {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: left;
+    width: 361px;
+}
+
+.label-text {
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 8px;
+}
+.Form-Title-Container input {
+    width: 100%;
+    background-color: #FAEBE4;
+    color: #A16E6E;
+    height: 41px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 14px;
+    font-family: Lato;
+}
+
+.Form-Title-Container input::placeholder {
+    color: #A16E6E; /* same as input text */
+    font-size: 14px;
+    font-family: Lato;
+    padding-left: 20px;
+    padding-top: 20px;
+
+}
+
+.Form-Detail-Container {
+    margin-top: 30px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: left;
+    width: 361px;
+    font-family: Lato;
+}
+.Form-Detail-Container textarea {
+    width: 100%;
+    background-color: #FAEBE4;
+    color: #A16E6E;
+    height: 140px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 14px;
+    font-family: Lato;
+}
+.Form-Detail-Container textarea::placeholder {
+    color: #A16E6E;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: Lato;
+}
+
+.Create-Tada-Button-Container {
+    width: 361px;
+    background-color: transparent;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.Create-Tada-Button-Container button {
+    width: 100%;
+    background-color: #8F7063;
+    color: white;
+    height: 43px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 16px;
+    font-family: Lato;
+}

@@ -1,0 +1,47 @@
+.Nav-Bar-Wrapper {
+    background-color: transparent;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Nav-Bar-Wrapper h1 {
+    margin: 0;
+    font-weight: 30px;
+    color: #333333;
+}
+
+.Nav-Bar-Create-Button-Container {
+  width: 57px;
+  height: 57px;
+  background-color: #8F7063;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  cursor: pointer;
+}
+
+.Nav-Bar-Create-Button-Container span {
+  position: absolute;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.Nav-Bar-Create-Button-Container span:first-child {
+  width: 35px;   /* horizontal line */
+  height: 4px;
+}
+
+.Nav-Bar-Create-Button-Container span:last-child {
+  width: 4px;    /* vertical line */
+  height: 35px;
+}

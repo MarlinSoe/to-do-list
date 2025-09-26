@@ -1,0 +1,10 @@
+.Home-To-Do-Cards-Wrapper {
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: transparent;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); /* responsive */
+    gap: 20px; /* space between cards */
+    justify-items: center; /* center cards */
+}

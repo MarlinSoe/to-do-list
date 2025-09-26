@@ -1,0 +1,61 @@
+.To-Do-Card-Container {
+    background-color: #FDF7F5;
+    width: 340px;
+    border-radius: 14px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #D1B7B3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.To-Do-Card-Information-Container {
+    background-color: transparent;
+    width: 85%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.To-Do-Card-Information-Container h1, p {
+    margin: 0;
+}
+.To-Do-Card-Information-Container h1 {
+    color: #856F68;
+    font-size: 18px;
+}
+.To-Do-Card-Information-Container p {
+    color: #333333;
+    font-size: 16px;
+    margin-top: 16px;
+    font-weight: 500;
+}
+
+.To-Do-Card-Additional-Container {
+    background-color: transparent;
+    width: 85%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+.To-Do-Card-Setting-Container {
+    display: flex;
+    gap: 33px;
+}
+
+.To-Do-Card-Date-Container {
+    background-color: #FAEBE4;
+    border-radius: 10px;
+}
+.To-Do-Card-Date-Container p{
+    font-size: 13px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 18px;
+    margin-right: 18px;
+    color: #333333;
+}
