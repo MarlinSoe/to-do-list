@@ -1,4 +1,0 @@
-aungnyeinchanconceptx_db_user
-lXiepVGX8OYNHo0t
-
-mongodb+srv://aungnyeinchanconceptx_db_user:lXiepVGX8OYNHo0t@mern-to-do-project.evaayqe.mongodb.net/to-do-db?retryWrites=true&w=majority&appName=MERN-to-do-project
