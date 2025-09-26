@@ -18,14 +18,14 @@ app.use(cors({origin: 'http://localhost:5173'}));
 
 app.use('/api/to-do-list', toDoRoutes);
 
-if (process.env.NODE_ENV === "production") {
-    // Serve static files from frontend dist
-    app.use(express.static(path.join(__dirname, 'frontend', 'dist')));
+// Serve frontend in production
+if (process.env.NODE_ENV === 'production') {
+  const frontendPath = path.join(__dirname, '../frontend/dist'); // safer for deployment
+  app.use(express.static(frontendPath));
 
-    // Catch-all route
-    app.get('*', (req, res) => {
-        res.sendFile(path.join(__dirname, 'frontend', 'dist', 'index.html'));
-    });
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(frontendPath, 'index.html'));
+  });
 }
 
 
