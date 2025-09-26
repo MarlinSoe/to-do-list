@@ -19,13 +19,15 @@ app.use(cors({origin: 'http://localhost:5173'}));
 app.use('/api/to-do-list', toDoRoutes);
 
 if (process.env.NODE_ENV === "production") {
-    app.use(express.static(path.join(__dirname, '../frontend/dist')));
+    // Serve static files from frontend dist
+    app.use(express.static(path.join(__dirname, 'frontend', 'dist')));
 
-    app.get("/*", (req, res) => {
-        res.sendFile(path.join(__dirname, "../frontend", "dist", "index.html"));
+    // Catch-all route
+    app.get('*', (req, res) => {
+        res.sendFile(path.join(__dirname, 'frontend', 'dist', 'index.html'));
     });
-
 }
+
 
 connectDB().then(() => {
     app.listen(PORT, () => {
